@@ -1,0 +1,67 @@
+[
+    {
+      "id": 1,
+      "itemName": "Item 1",
+      "imgSrc": "https://www.pngplay.com/wp-content/uploads/2/Modern-Chair-PNG-HD-Quality.png",
+      "price": "$25",
+      "description": "This is the description for Item ",
+      "wpLink":"#"
+    },
+    {
+      "id": 2,
+      "itemName": "Item 2",
+      "imgSrc": "https://www.pngplay.com/wp-content/uploads/2/Modern-Chair-PNG-HD-Quality.png",
+      "price": "$25",
+      "description": "This is the description for Item ",
+      "wpLink":"#"
+    },
+    {
+      "id": 3,
+      "itemName": "Item 3",
+      "imgSrc": "https://www.pngplay.com/wp-content/uploads/2/Modern-Chair-PNG-HD-Quality.png",
+      "price": "$25",
+      "description": "This is the description for Item ",
+      "wpLink":"#"
+    },
+    {
+      "id": 4,
+      "itemName": "Item 4",
+      "imgSrc": "https://www.pngplay.com/wp-content/uploads/2/Modern-Chair-PNG-HD-Quality.png",
+      "price": "$25",
+      "description": "This is the description for Item ",
+      "wpLink":"#"
+    },
+    {
+      "id": 5,
+      "itemName": "Item 5",
+      "imgSrc": "https://www.pngplay.com/wp-content/uploads/2/Modern-Chair-PNG-HD-Quality.png",
+      "price": "$25",
+      "description": "This is the description for Item ",
+      "wpLink":"#"
+    },
+    {
+      "id": 6,
+      "itemName": "Item 6",
+      "imgSrc": "https://www.pngplay.com/wp-content/uploads/2/Modern-Chair-PNG-HD-Quality.png",
+      "price": "$25",
+      "description": "This is the description for Item ",
+      "wpLink":"#"
+    },
+    {
+      "id": 7,
+      "itemName": "Item 7",
+      "imgSrc": "https://www.pngplay.com/wp-content/uploads/2/Modern-Chair-PNG-HD-Quality.png",
+      "price": "$25",
+      "description": "This is the description for Item ",
+      "wpLink":"#"
+    },
+    {
+      "id": 8,
+      "itemName": "Item 8",
+      "imgSrc": "https://www.pngplay.com/wp-content/uploads/2/Modern-Chair-PNG-HD-Quality.png",
+      "price": "$25",
+      "description": "This is the description for Item ",
+      "wpLink":"#"
+    }
+  ]
+  
