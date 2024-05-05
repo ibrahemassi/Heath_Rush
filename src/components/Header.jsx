@@ -23,7 +23,7 @@ function Header() {
             </li>
             <li><Link to="/shop" className="nav-link" >Shop</Link></li>
             <li><Link to="/aboutus" className="nav-link" >About us</Link></li>
-            <li><Link to="contactus" className="nav-link" >Contact us</Link></li>
+            <li><Link to="/contactus" className="nav-link" >Contact us</Link></li>
           </ul>
         </div>
       </div>
