@@ -28,7 +28,7 @@ const AboutUs = () => {
 							<li>Donec vitae odio quis nisl dapibus malesuada</li>
 							<li>Donec vitae odio quis nisl dapibus malesuada</li>
 						</ul>
-						<p><Link to="/appointment" className="btn btn-primary">book a appoitment</Link></p>
+						<p><Link to="/contactus" className="btn btn-primary">Contact Us</Link></p>
 					</div>
 				</div>
 			</div>

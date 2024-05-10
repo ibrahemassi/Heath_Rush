@@ -1,7 +1,7 @@
 import './App.css'
 import "bootstrap/dist/css/bootstrap.min.css"
 import { Routes ,Route } from 'react-router-dom';
-import { AboutUs, Header, Items ,ContactUs, Missing,Home,Footer,BookAppointment } from './components' 
+import { AboutUs, Header, Items ,ContactUs, Missing,Home,Footer } from './components' 
 
 function App() {
 
@@ -17,7 +17,6 @@ function App() {
         <Route path='/shop' element={<Items />} />
         <Route path='/aboutus' element={<AboutUs />} />
         <Route path='/contactus' element={<ContactUs />} />
-        <Route path='appointment' element={<BookAppointment />} />
         <Route path='*' element={<Missing />} />
       </Routes>
       <Footer/>
