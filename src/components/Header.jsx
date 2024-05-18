@@ -1,36 +1,68 @@
-import React from 'react'
+import React, { useState, useEffect } from 'react';
 import logo from "../assets/healthyRushDark.png";
-import { Link } from 'react-router-dom';
+import { Link, useLocation } from 'react-router-dom';
 
-function Header() {
-  const isActive = (link) => {
-    
-  }
+const Header = () => {
+  const location = useLocation();
+  const [activeLink, setActiveLink] = useState(location.pathname);
+
+  useEffect(() => {
+    setActiveLink(location.pathname);
+  }, [location]);
+
+  const handleLinkClick = (path) => {
+    setActiveLink(path);
+  };
+
   return (
-    <div>
-     <nav className="custom-navbar navbar navbar-expand-md" aria-label="Health Rust navigation bar">
-      <div className="container">
-        <Link className="navbar-brand" to="/">
-          <img style={{ width: '100px' }} src={logo} alt="Logo" />
+    <header className="d-flex flex-wrap justify-content-center py-3 mb-4 border-bottom">
+      <a href="/" className="d-flex align-items-center mb-3 mb-md-0 me-md-auto link-body-emphasis text-decoration-none">
+        <Link className="navbar-brand" to="/" onClick={() => handleLinkClick('/')}>
+          <img style={{ width: '100px', margin: '10px', paddingLeft:"10px"}} src={logo} alt="Logo" />
         </Link>
-        <button className="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarsHealthRust" aria-controls="navbarsHealthRust" aria-expanded="false" aria-label="Toggle navigation">
-          <span className="navbar-toggler-icon"></span>
-        </button>
-        <div className="collapse navbar-collapse" id="navbarsHealthRust">
-          <ul className="custom-navbar-nav navbar-nav ms-auto mb-2 mb-md-0">
-            <li className={"nav-item" + isActive}>
-              <Link to="/" className="nav-link">Home</Link>
-            </li>
-            <li><Link to="/shop" className="nav-link" >Shop</Link></li>
-            <li><Link to="/aboutus" className="nav-link" >About us</Link></li>
-            <li><Link to="/contactus" className="nav-link" >Contact us</Link></li>
-          </ul>
-        </div>
-      </div>
-    </nav>
+      </a>
 
-    </div>
-  )
+      <ul className="nav nav-pills" style={{ marginTop: '20px' }}>
+        <li className="nav-item">
+          <Link 
+            to="/" 
+            className={`nav-link ${activeLink === '/' ? 'active' : ''}`} 
+            aria-current="page" 
+            onClick={() => handleLinkClick('/')}
+          >
+            Home
+          </Link>
+        </li>
+        <li className="nav-item">
+          <Link 
+            to="/shop" 
+            className={`nav-link ${activeLink === '/shop' ? 'active' : ''}`} 
+            onClick={() => handleLinkClick('/shop')}
+          >
+            Shop
+          </Link>
+        </li>
+        <li className="nav-item">
+          <Link 
+            to="/aboutus" 
+            className={`nav-link ${activeLink === '/aboutus' ? 'active' : ''}`} 
+            onClick={() => handleLinkClick('/aboutus')}
+          >
+            About us
+          </Link>
+        </li>
+        <li className="nav-item">
+          <Link 
+            to="/contactus" 
+            className={`nav-link ${activeLink === '/contactus' ? 'active' : ''}`} 
+            onClick={() => handleLinkClick('/contactus')}
+          >
+            Contact us
+          </Link>
+        </li>
+      </ul>
+    </header>
+  );
 }
 
-export default Header
+export default Header;

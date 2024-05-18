@@ -1,3 +1,19 @@
+/* Override default Bootstrap nav-pills active color */
+.nav-pills .nav-link.active, 
+.nav-pills .show > .nav-link {
+  background-color: transparent; /* Remove background color if needed */
+  color: #515151 !important; /* Yellow color for active link */
+}
+
+/* Optionally, style the non-active links and hover state */
+.nav-pills .nav-link {
+  color: #000; /* Default color for non-active links */
+}
+
+.nav-pills .nav-link:hover {
+  color: #515151; /* Yellow color on hover */
+}
+
 .gradient-background {
     background: linear-gradient(300deg, #f1a7c9, #fff, #f1a7c9);
     background-size: 180% 180%;
